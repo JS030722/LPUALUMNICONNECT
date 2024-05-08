@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity"
+    tools:openDrawer="start">
+
+    <!-- Toolbar layout inclusion should be outside FrameLayout for better control -->
+    <include
+        android:id="@+id/toolbar_navigation"
+        layout="@layout/toolbar_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- This FrameLayout is the main container for your activity's content -->
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/eyeball">  <!-- Ensures padding below the toolbar -->
+
+        <!-- Your main content here, e.g., RecyclerView, ViewPager, etc. -->
+
+        <!-- BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_navigation_menu"
+            android:background="@color/eyeball"
+            app:itemIconTint="@color/chocolate"
+            app:itemTextColor="@color/chocolate"
+            app:itemRippleColor="@color/eyeball"
+            /> <!-- You need to create a menu resource file -->
+
+    </FrameLayout>
+
+    <!-- NavigationView for the drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/navigation_view_menu"
+        android:backgroundTint="@color/eyeball"
+        app:itemTextColor="@color/grey"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

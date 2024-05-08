@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371817807280",
+    "project_id": "lpu-alumni-connect",
+    "storage_bucket": "lpu-alumni-connect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371817807280:android:f089cf099321eeaab96a75",
+        "android_client_info": {
+          "package_name": "com.example.lpualumniconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa6_WULvPLLpe9LKpZKAtkP9p02y4NUN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

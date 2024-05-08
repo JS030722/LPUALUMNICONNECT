@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LPUALUMNICONNECT" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/grey</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LPUALUMNICONNECT" parent="Base.Theme.LPUALUMNICONNECT" />
+
+    <!-- Custom Style for AlertDialog -->
+    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <!-- Rounded corner background for the dialog -->
+        <item name="android:background">@drawable/dialog_background</item>
+
+        <!-- Colors for the dialog buttons -->
+        <item name="colorPrimary">@color/chocolate</item>
+
+        <!-- Text color for buttons -->
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+
+        <!-- Title text color -->
+        <item name="android:textColorPrimary">@color/chocolate</item> <!-- Change this to your desired title color -->
+        <item name="android:textColor">@color/chocolate</item>
+    </style>
+
+    <!-- Positive Button Style -->
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/chocolate</item>
+    </style>
+
+    <!-- Negative Button Style -->
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/chocolate</item>
+    </style>
+
+    <style name="SlideTheme" parent="Theme.AppCompat">
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+    <style name="SlideAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+
+
+</resources>

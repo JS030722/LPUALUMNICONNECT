@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SchoolDomainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/eyeball">
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Change School and Domain"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/chocolate"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/chocolate"
+        android:textColorHint="@color/chocolate"
+        app:hintTextColor="@color/chocolate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/schoolEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your respective school"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/chocolate"
+            android:textColorHint="@color/chocolate"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/chocolate"
+        android:textColorHint="@color/chocolate"
+        app:hintTextColor="@color/chocolate"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/domainEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your respective batch"
+            android:focusable="false"
+            android:textColor="@color/chocolate"
+            android:focusableInTouchMode="false"
+            android:textColorHint="@color/chocolate"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/schoolDomainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Changes"
+        app:cornerRadius="5dp"
+        app:backgroundTint="@color/chocolate"
+        android:textColor="@color/eyeball"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

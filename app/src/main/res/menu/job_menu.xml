@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_find_job"
+        android:title="Find Jobs"
+        android:icon="@drawable/jobsmajor_svgrepo_com"/>
+
+    <item
+        android:id="@+id/navigation_create_job"
+        android:title="Create Jobs"
+        android:icon="@drawable/create_job_svgrepo_com"/>
+
+</menu>

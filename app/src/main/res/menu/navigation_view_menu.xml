@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Search People"
+            android:id="@+id/users"
+            android:icon="@drawable/search_alt_2_svgrepo_com"
+
+            />
+
+        <item
+            android:id="@+id/job"
+            android:title="Find/ Create Jobs"
+            android:icon="@drawable/jobsmajor_svgrepo_com"/>
+    <item
+
+        android:title="Fundraiser"
+        android:id="@+id/PostFund"
+        android:icon="@drawable/money"
+
+        />
+
+    <item
+        android:title="Post a Event"
+        android:id="@+id/Event"
+        android:icon="@drawable/event_tent_svgrepo_com"
+
+        />
+
+        <item
+            android:id="@+id/news"
+            android:title="News and Updates"
+            android:icon="@drawable/news_paper_svgrepo_com"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_3_svgrepo_com"/>
+
+    </group>
+</menu>

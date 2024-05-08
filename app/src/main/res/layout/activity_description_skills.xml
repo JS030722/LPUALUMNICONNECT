@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionSkillsActivity"
+    android:orientation="vertical"
+    android:background="@color/eyeball">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:counterTextColor="@color/chocolate"
+        app:hintTextColor="@color/chocolate"
+        android:textColorHint="@color/chocolate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/chocolate"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Write the Description !"
+            android:gravity="start"
+            android:textColor="@color/chocolate"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Top 3 skills"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/chocolate"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/chocolate"
+        app:hintTextColor="@color/chocolate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/chocolate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_skill1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the first skill"
+            android:gravity="start"
+            android:textColor="@color/chocolate"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/chocolate"
+        android:textColorHint="@color/chocolate"
+        app:hintTextColor="@color/chocolate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_skill2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the second skill"
+            android:gravity="start"
+            android:textColor="@color/chocolate"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/chocolate"
+        android:textColorHint="@color/chocolate"
+        app:hintTextColor="@color/chocolate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_skill3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the third skill"
+            android:gravity="start"
+            android:textColor="@color/chocolate"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/edit_descriptionSkillsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="2dp"
+        app:backgroundTint="@color/chocolate"
+        android:text="Make Changes"
+        android:layout_gravity="center"
+        android:textColor="@color/eyeball"/>
+
+</LinearLayout>

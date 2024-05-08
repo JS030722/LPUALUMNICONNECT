@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/eyeball">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/grey"
+        app:hintTextColor="@color/grey">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextJobName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job Title"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/grey"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/grey"
+        app:hintTextColor="@color/grey">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextJobLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job Level (Intern/ Entry Level/ Mid/ Senior)"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/grey"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/grey"
+        app:hintTextColor="@color/grey">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextJobDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Job Description..."
+            android:gravity="start"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/grey"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
